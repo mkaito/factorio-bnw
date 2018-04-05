@@ -1,0 +1,11 @@
+{
+    "name": "BraveNewWorld",
+    "version": "0.0.1",
+    "title": "BraveNewWorld",
+    "author": "mkaito",
+    "contact": "",
+    "homepage": "",
+    "factorio_version": "0.16",
+    "dependencies": ["base >= 0.15", "? autofill >= 1.4.8", "? LogisticTrainNetwork >= 1.4.14"],
+    "description": "Some custom settings for my games"
+}
