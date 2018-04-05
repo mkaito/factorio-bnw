@@ -44,3 +44,9 @@ data.raw.item["logistic-robot"].stack_size = 200
 -- Chunky power poles
 data.raw["electric-pole"]["big-electric-pole"].maximum_wire_distance = 32
 data.raw["electric-pole"]["medium-electric-pole"].maximum_wire_distance = 16
+
+-- Sane steel production
+data.raw.recipe["steel-plate"].normal.ingredients[1][2] = 4
+data.raw.recipe["steel-plate"].normal.energy_required = 14
+data.raw.recipe["steel-plate"].expensive.ingredients[1][2] = 8
+data.raw.recipe["steel-plate"].expensive.energy_required = 28
