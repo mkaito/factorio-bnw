@@ -44,16 +44,3 @@ data.raw.item["logistic-robot"].stack_size = 200
 -- Chunky power poles
 data.raw["electric-pole"]["big-electric-pole"].maximum_wire_distance = 32
 data.raw["electric-pole"]["medium-electric-pole"].maximum_wire_distance = 16
-
--- Make car faster and more resilient
--- data.raw["car"].car.consumption = "1.2MW"
--- data.raw["car"].car.braking_power = "3MW"
--- data.raw["car"].car.weight = 350
--- data.raw["car"].car.resistances =
--- {
---   {
---     type = "impact",
---     percent = 70,
---     decrease = 120
---   }
--- }
