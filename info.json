@@ -1,11 +1,11 @@
 {
     "name": "bnw",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "title": "Brave New World",
     "author": "mkaito",
     "contact": "",
     "homepage": "",
     "factorio_version": "0.17",
-    "dependencies": ["base >= 0.15", "? LogisticTrainNetwork >= 1.4.14"],
+    "dependencies": ["base >= 0.17", "? LogisticTrainNetwork >= 1.4.14"],
     "description": "A set of opinionated modifications to the base game."
 }
