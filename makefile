@@ -6,7 +6,6 @@ OUTPUT_DIR := $(BUILD_DIR)/$(OUTPUT_NAME)
 CONFIG = ./$(OUTPUT_DIR)/config.lua
 MODS_DIRECTORY := $(HOME)/.factorio/mods
 MOD_DIR := $(MODS_DIRECTORY)/$(OUTPUT_NAME)
-##MOD_LINK := $(shell find $(MODS_DIRECTORY)/$(OUTPUT_NAME) -mindepth 1 -maxdepth 1 -type d)
 
 PKG_COPY := $(wildcard *.md) $(wildcard .*.md) $(wildcard graphics) $(wildcard locale) $(wildcard sounds)
 
@@ -42,9 +41,8 @@ $(OUTPUT_DIR)/%: %
 ## Make actual folder, then symlink things inside
 # Factorio will refuse to load the mod if the actual mod folder is a symlink,
 # but appears to load symlinks inside mod folder just fine.
-symlink: package-copy cleandest
-	mkdir -p $(MOD_DIR)
-	ln -st $(MOD_DIR) $(PWD)/$(OUTPUT_DIR)/*
+symlink: cleandest
+	ln -s $(PWD) $(MODS_DIRECTORY)/$(OUTPUT_NAME)
 
 tag:
 	git tag -f v$(VERSION_STRING)
